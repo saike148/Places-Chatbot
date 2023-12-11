@@ -1,0 +1,125 @@
+.app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.app-container {
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  padding: 0 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.spotlight__wrapper {
+  border-radius: 12px;
+  border: 1px solid #dfe1e5;
+  margin: 4rem 0;
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+}
+
+.spotlight__wrapper:hover,
+.spotlight__wrapper:focus {
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+.spotlight__input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  width: 93%;
+  border: 0;
+  border-radius: 12px;
+  outline: none;
+  font-size: 1.2rem;
+  color: #000;
+  background-position: left 17px center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-size: 3.5%;
+  padding-left: 20px;
+}
+
+.spotlight__input__sub {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spotlight__input::placeholder {
+  line-height: 1.5em;
+}
+
+.spotlight__answer {
+  min-height: 115px;
+  line-height: 1.5em;
+  letter-spacing: 0.1px;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: pre-wrap;
+}
+
+.spotlight__answer p::after {
+  content: "";
+  width: 2px;
+  height: 14px;
+  position: relative;
+  top: 2px;
+  left: 2px;
+  background: rgb(54, 51, 51);
+  display: inline-block;
+  animation: cursor-blink 1s steps(2) infinite;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  width: 100%;
+}
+
+/* .bg-img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.1;
+  background-image:  linear-gradient(#444cf7 2.4000000000000004px, transparent 2.4000000000000004px), linear-gradient(90deg, #444cf7 2.4000000000000004px, transparent 2.4000000000000004px), linear-gradient(#444cf7 1.2000000000000002px, transparent 1.2000000000000002px), linear-gradient(90deg, #444cf7 1.2000000000000002px, #e5e5f7 1.2000000000000002px);
+  background-size: 60px 60px, 60px 60px, 12px 12px, 12px 12px;
+  background-position: -2.4000000000000004px -2.4000000000000004px, -2.4000000000000004px -2.4000000000000004px, -1.2000000000000002px -1.2000000000000002px, -1.2000000000000002px -1.2000000000000002px;
+} */
+.bg-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('/home/saike/Projects/amFOSS/Entry task/Places-chatbot/public/assets/map_bg.avif');
+  background-size: cover;
+  background-position: center;
+  /* filter: blur(1px);  */
+  opacity: 0.3;
+}
+
+
+@keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+}
